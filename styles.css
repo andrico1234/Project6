@@ -31,6 +31,15 @@ body {
   fill: #111;
 }
 
+a:hover .menu-logo .st0 {
+  animation: logo 1s ease-out;
+  fill: #111;
+}
+
+.text {
+  visibility: hidden;
+}
+
 @keyframes logo {
   30% {
     transform: scale(0.8);
@@ -44,10 +53,6 @@ body {
   100% {
     transform: scale(1);
   }
-}
-
-.menu-logo:hover .st0 {
-  animation: logo 1s ease-out;
 }
 
 a {
@@ -133,7 +138,8 @@ a:hover {
 
 
 .alt-logo-text {
-  display: none;
+  display: block;
+  color: #BA8058;
 }
 
 p {
@@ -199,10 +205,10 @@ footer {
 
 @media screen and (min-width: 420px) {
   .text {
-    visibility: hidden;
+    visibility: visible;
   }
 
   .alt-logo-text {
-    display: block;
+    display: none;
   }
 }
